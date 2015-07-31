@@ -1,0 +1,158 @@
+/* Inactive style for Voat v1.1a fix 3 - https://voat.co/v/Inactive */
+
+* {
+	border-radius: 0 !important;
+}
+
+#nightmodetoggle, #nightmodetoggle + .separator {
+	display: none;
+}
+
+body, #container {
+	background: #008080;
+	font-family: 'Arial', sans-serif;
+}
+
+.footer p, .footer a {
+	color: #fff;
+}
+
+.footer a {
+	text-decoration: underline;
+}
+
+#header:focus {
+	outline: none;
+}
+
+#container {
+	border: 0;
+}
+
+#header > #sr-header-area .whoaSubscriptionMenu.hover ul {
+	border: 1px solid #000;
+	box-shadow: none;
+}
+
+#header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a {
+	border: 1px dotted #fff;
+}
+#header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a:hover {
+	color: #000;
+	background: #000080;
+}
+
+#header > div, #container > .content,
+#container > .side,
+#container .submission,
+#container > .side .content,
+#container > .side .spacer,
+#container > .well {
+	color: #000;
+	background: #c0c0c0;
+	border: 1px solid #dfdfdf;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+#container > .content,
+#container > .side,
+#container > .well {
+	padding: 1px 2px;
+}
+
+#container > .content:before,
+#container > .side:before,
+#container > .well:before {
+	content: "";
+	color: #fff;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	padding-left: 4px;
+	display: block;
+	background: #000080;
+	background: linear-gradient(to right, #000080, #1084d0);
+	height: 16px;
+	margin: 1px 0;
+}
+
+#container .submission {
+	margin: 4px 2px;
+}
+
+#header a,
+#sr-header-area .sr-list a,
+#container a {
+	color: #00f;
+	text-decoration: underline;
+}
+
+#sr-header-area:hover .sr-list.hover a {
+	color: #000;
+}
+
+#header .pagename {
+	font-weight: bold;
+}
+
+#container * {
+	color: #000;
+}
+
+#header .tabmenu li a,
+#container .btn-block,
+#container button,
+#container input[type="submit"],
+#container input[type="button"] {
+	color: black;
+	border: 1px solid #fff;
+	border-right: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+	background: lightgray;
+	text-decoration: none;
+}
+
+#header .tabmenu li.selected a {
+	font-weight: bold;
+}
+
+#header .tabmenu li a:active,
+#container .btn-block:active,
+#container button:active,
+#container input[type="submit"]:active,
+#container input[type="button"]:active {
+	border: 1px solid #808080;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#container input[type="text"],
+#container textarea {
+	border: 1px solid #000;
+}
+
+#container .entry .tagline .post_upvotes {
+	color: #00f;
+}
+
+#container .entry .tagline .post_downvotes {
+	color: #f00;
+}
+
+#container .entry .title .promoted {
+	background: #ffffcc;
+	border: 1px solid #000;
+	border-radius: 5px !important;
+	padding: 3px 2px;
+}
+
+/* You may change this if you want different text or delete if you don't want titles */
+
+#container > .content[role="main"]:before {
+	content: ""; /* Put your subverse name here! */
+}
+
+#container > .side:before {
+	content: "Sidebar";
+}
