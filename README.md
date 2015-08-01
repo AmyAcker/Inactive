@@ -16,8 +16,6 @@ Inactive is a retro stylesheet for Voat subverses. It looks like Windows 98.
     * Bold font for hot/new/top when selected
 
 **TODO:**
-  * Login dialog
-  * Flair dialog
   * Custom icons (configuration, messages, upvoat, dowvoat, RSS)
   * Custom logo
   * Night mode (similar to high contrast in Windows)
