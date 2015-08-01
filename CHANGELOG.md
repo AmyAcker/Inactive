@@ -12,3 +12,4 @@
   * Style login and flair dialogs
 * v1.2a
   * Added a custom logo
+  * Style for checkboxes (not working on Firefox)

@@ -1,4 +1,4 @@
-/* Inactive style for Voat v1.1a - https://voat.co/v/Inactive */
+/* Inactive style for Voat v1.2a - https://voat.co/v/Inactive */
 
 * {
 	-webkit-border-radius: 0 !important;
@@ -17,7 +17,7 @@
 	width: 112px;
 	height: 31px;
 	margin: 7px 12px 10px;
-    vertical-align: unset;
+	vertical-align: unset;
 }
 
 #nightmodetoggle, #nightmodetoggle + .separator {
@@ -64,6 +64,20 @@ body, #container, .modal {
 #header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a:hover {
 	color: #000;
 	background: #000080;
+}
+
+[type="checkbox"]:after {
+	content: "";
+	display: block;
+	width: 1.1em;
+	height: 1.1em;
+	border: 1px solid #000;
+	background: #fff;
+	font-weight: bold;
+}
+
+[type="checkbox"]:checked:after {
+	content: "\2713";
 }
 
 #header > div, #container > .content,
