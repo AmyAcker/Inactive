@@ -1,6 +1,8 @@
-/* Inactive style for Voat v1.1a fix 3 - https://voat.co/v/Inactive */
+/* Inactive style for Voat v1.1a fix 4 - https://voat.co/v/Inactive */
 
 * {
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
 	border-radius: 0 !important;
 }
 
@@ -31,6 +33,8 @@ body, #container {
 
 #header > #sr-header-area .whoaSubscriptionMenu.hover ul {
 	border: 1px solid #000;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
 	box-shadow: none;
 }
 
@@ -72,6 +76,11 @@ body, #container {
 	padding-left: 4px;
 	display: block;
 	background: #000080;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000080', endColorstr='#1084d0', GradientType=1);
+	background: -webkit-gradient(linear, left top, right top, from(#000080), to(#1084d0));
+	background: -webkit-linear-gradient(left, #000080, #1084d0);
+	background: -moz-linear-gradient(left, #000080, #1084d0);
+	background: -o-linear-gradient(left, #000080, #1084d0);
 	background: linear-gradient(to right, #000080, #1084d0);
 	height: 16px;
 	margin: 1px 0;
@@ -143,6 +152,8 @@ body, #container {
 #container .entry .title .promoted {
 	background: #ffffcc;
 	border: 1px solid #000;
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
 	border-radius: 5px !important;
 	padding: 3px 2px;
 }
