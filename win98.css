@@ -1,4 +1,4 @@
-/* Inactive style for Voat v1.1a fix 4 - https://voat.co/v/Inactive */
+/* Inactive style for Voat v1.1a fix 5 - https://voat.co/v/Inactive */
 
 * {
 	-webkit-border-radius: 0 !important;
@@ -12,7 +12,9 @@
 
 body, #container {
 	background: #008080;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Verdana', sans-serif;
+	-webkit-font-smoothing : none !important;
+	font-smooth: never !important;
 }
 
 .footer p, .footer a {
