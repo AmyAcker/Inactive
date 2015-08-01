@@ -146,6 +146,10 @@ body, #container, .modal {
 	color: #000;
 }
 
+#container .modal .modal-header .modal-title {
+	color: #fff;
+}
+
 #header .tabmenu li a,
 #container [class^="btn-"],
 .alert [class^="btn-"],
