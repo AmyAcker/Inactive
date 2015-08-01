@@ -1,4 +1,4 @@
-/* Inactive style for Voat v1.1a fix 5 - https://voat.co/v/Inactive */
+/* Inactive style for Voat v1.1a - https://voat.co/v/Inactive */
 
 * {
 	-webkit-border-radius: 0 !important;
@@ -108,6 +108,21 @@ body, #container, .modal {
 
 #container .submission {
 	margin: 4px 2px;
+}
+
+.modal label.control-label {
+	color: #000;
+	background: transparent;
+	text-shadow: none;
+	border-bottom: 0;
+}
+
+.modal input.form-control[type="text"],
+.modal input.form-control[type="password"],
+.modal input.form-control[type="text"]:focus,
+.modal input.form-control[type="password"]:focus {
+	color: #000;
+	border: 1px solid #000;
 }
 
 #header a,
