@@ -13,3 +13,6 @@
 * v1.2a
   * Added a custom logo
   * Style for checkboxes (not working on Firefox)
+* v1.2
+  * Added custom icons
+  * First Release version

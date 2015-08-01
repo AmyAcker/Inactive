@@ -1,9 +1,8 @@
 # Inactive
 Inactive is a retro stylesheet for Voat subverses. It looks like Windows 98.
 
-**TODO:**
-  * Custom icons (configuration, messages, upvoat, dowvoat, RSS)
-  * Night mode (similar to high contrast in Windows)
-
 **It looks like this:**
-![Screenshot](https://i.bitnr.com/-V3Ccn.png)
+![Screenshot](https://veuwer.com/i/2z06.png)
+
+**TODO:**
+  * Night mode (similar to high contrast in Windows)
