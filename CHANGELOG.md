@@ -10,3 +10,5 @@
   * Fixed outline on header when it is focused
   * Bold font for hot/new/top when selected
   * Style login and flair dialogs
+* v1.2a
+  * Added a custom logo
