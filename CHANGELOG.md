@@ -17,3 +17,5 @@
   * Added custom icons
   * First Release version
   * Fixed logo alignment
+* v1.3b
+  * Added style for scrollbars (Webkit only)
