@@ -16,3 +16,4 @@
 * v1.2
   * Added custom icons
   * First Release version
+  * Fixed logo alignment
