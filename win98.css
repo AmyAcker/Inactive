@@ -7,16 +7,16 @@
 }
 
 ::-webkit-scrollbar {
-	width: 14px;
-	height: 14px;
+	width: 1.5vw;
+	height: 1.5vw;
 }
 
 ::-webkit-scrollbar-button:vertical {
-	height: 16px;
+	height: 1.8vw;
 }
 
 ::-webkit-scrollbar-button:horizontal {
-	width: 16px;
+	width: 1.8vw;
 }
 
 ::-webkit-scrollbar-track {
@@ -37,9 +37,9 @@
 
 ::-webkit-resizer {
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABoUlEQVQoz53RXWvTYADF8f/zJE1NsyV29DW1bWAjurVpYyYt+IH8LH4HtS1uRfEFVJxsboJMsQrDFnfjqs4bZVvvndDhHi9EvJm67dz/4ByOeN57zWkiT4PihoF+EiCE4Ew8znSppI4NpRRMJCzcdEZ1Ot3jVdWkJGnbV52EpdqdLkLK/0NN00hNJdXh+Mfa3XsPMRMmzcuNf2/UdZ1cKqVGO3usv+yt2mdt5hsRM+Xy32FM1ylkc2q4NaTf3ySdTRNGdc5lsrTbi0dDIxajXCioN70NPn7axi26hGEVK27Sai9iHHWHYcSYKZXV8vIau3sjvGmPIJjl4PuYO48eYCZMLjXn/8DfH/mep27dvs+3/X38WZ/q3AVGuyPWX7zCdmyiZoTveb+gEIJJy6KQyahr128ipaRSr1A577P1/gP9/jvSmTRhVKOYy9NqLSCllCQd54qTmFCtdhepSS42QsLqHG83BgwGm7hFl0YzYmrS5kZrAYRADLc/q8PxAUtPVtF0jSAKiIIqKyvP+Pplh3wxT1ivoinB46WnSE1Si2r8BF63dDTf5s/tAAAAAElFTkSuQmCC);
-	background-size: 14px 14px;
-	width: 14px;
-	height: 14px;
+	background-size: 1.5vw 1.5vw;
+	width: 1.5vw;
+	height: 1.5vw;
 }
 
 ::-webkit-scrollbar-button:active {
