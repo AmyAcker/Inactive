@@ -19,3 +19,4 @@
   * Fixed logo alignment
 * v1.3b
   * Added style for scrollbars (Webkit only)
+  * Added Windows 98 cursors
