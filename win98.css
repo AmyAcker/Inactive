@@ -118,7 +118,7 @@ label, [type="checkbox"] {
 	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATCAYAAABGKffQAAAABmJLR0QA/wD/AP+gvaeTAAAAcElEQVQoz5WSUQrAMAhDk7D7Xzn7WUGsts6vVvKUqARg28QgBAAkPRbbHgFajwmg+LkByokToCrZAepaVoBOhjKg27giwG+Dm4jcl/pkQQTzGSgJuSq2BpdwehuMrbvqmp7naYNldeFHsJpxmJCjpxemxFQXOQqqJwAAAABJRU5ErkJggg==), auto;
 }
 
-textarea, [type="text"],
+[type="text"],
 [type="password"] {
 	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAQCAYAAADagWXwAAAABmJLR0QA/wD/AP+gvaeTAAAAL0lEQVQY0+2RoQ0AMAzDnP3/s0tWaahsrJECHMMA2FV5OXcAIIlqmg9DVv6TTJcV4VwZB7onz7wAAAAASUVORK5CYII=), auto !important;
 }
@@ -140,9 +140,9 @@ input[type="submit"],
 	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAWCAYAAAAmaHdCAAAABmJLR0QA/wD/AP+gvaeTAAAAgUlEQVQ4y9WTSw7FMAgDccT9rzxdpYpQSz68t6hXUYQmBhMBFiUJMzNAtqD2BAAMuGHbkBN9CCKJ2Wx8BunpjaCYmu/YjsAOO57JuAKe2VwF+Vvf4308p+lkhVldAySpvidVUJtZ3YJU3JT+jiQDFNM5cvOfX7zqprfyMyeevbSqC/fAUye33YsSAAAAAElFTkSuQmCC), auto !important;
 }
 
-::-webkit-scrollbar {
-	/* Not working, see bug report at: https://code.google.com/p/chromium/issues/detail?id=290466 */
-	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATCAYAAABGKffQAAAABmJLR0QA/wD/AP+gvaeTAAAAcElEQVQoz5WSUQrAMAhDk7D7Xzn7WUGsts6vVvKUqARg28QgBAAkPRbbHgFajwmg+LkByokToCrZAepaVoBOhjKg27giwG+Dm4jcl/pkQQTzGSgJuSq2BpdwehuMrbvqmp7naYNldeFHsJpxmJCjpxemxFQXOQqqJwAAAABJRU5ErkJggg==), auto !important;
+textarea {
+	/* Disable custom cursor unti this bug is fixed: https://code.google.com/p/chromium/issues/detail?id=290466 */
+	cursor: auto !important;
 }
 
 .modal {
