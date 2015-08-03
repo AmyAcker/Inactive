@@ -241,6 +241,7 @@ textarea {
 .modal .modal-header {
 	background: #000080;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000080', endColorstr='#1084d0', GradientType=1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000080', endColorstr='#1084d0', GradientType=1)";
 	background: -webkit-gradient(linear, left top, right top, from(#000080), to(#1084d0));
 	background: -webkit-linear-gradient(left, #000080, #1084d0);
 	background: -moz-linear-gradient(left, #000080, #1084d0);
