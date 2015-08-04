@@ -5,6 +5,3 @@ For more information and support visit our Voat subverse: [/v/Inactive](https://
 
 **It looks like this:**
 ![Screenshot](https://i.bitnr.com/gd6Q5m.png)
-
-**TODO:**
-  * Night mode (a bit darker version)

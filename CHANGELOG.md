@@ -21,3 +21,4 @@
   * Added style for scrollbars (Webkit only)
   * Added Windows 98 cursors
   * Added start menu, thanks [/u/miro](https://voat.co/user/miro) for the idea!
+  * Fixed night mode
