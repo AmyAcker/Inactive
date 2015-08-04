@@ -141,6 +141,10 @@ label, [type="checkbox"] {
 	border-bottom: 0;
 }
 
+#sr-header-area:hover #sr-bar li a {
+	color: #444;
+}
+
 a, button,
 html input[type="button"],
 input[type="reset"],
