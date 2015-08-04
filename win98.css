@@ -243,7 +243,9 @@ textarea {
 .modal .modal-header,
 .modal .modal-body,
 .modal .modal-footer,
-#container .alert-featuredsub {
+#container .alert-featuredsub,
+#container .thread,
+#container .comment {
 	color: #000;
 	background: #c0c0c0;
 	border: 1px solid #dfdfdf;
