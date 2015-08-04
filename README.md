@@ -6,4 +6,3 @@ Inactive is a retro stylesheet for Voat subverses. It looks like Windows 98.
 
 **TODO:**
   * Night mode (a bit darker version)
-  * Convert subverses list into start menu
