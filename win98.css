@@ -106,8 +106,32 @@
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAABmJLR0QA/wD/AP+gvaeTAAAA9klEQVQoz3WRQcqDMBBGXzoBBVdKF0VEoScoeBihR+rdCrlC9yELYUDB0C5+FOPffqsJebyZTAy7eO/f+/P5fDZrbVZARLDWsiwLADFGVBURoWkaYwFEhDzPOcJFUaCqf0bv/TvLMrIs20wA0zQxjiMAqspJRBLgW5xz2COwn3G1iQhWRBLbCh5zKsvSqCoxRuZ5JsbIOI7bI5xzDMNgtj29Xq9kh6qKc477/W4A7LHF3pS0Xouu60xRFMnlavtnfDwehBCoqooQwncjwPV65Xa7AVBV1W/wcrnQNA0AbdsmYNK6ruufv5OAMUaezydt29L3fQJ+AGiSdCHjxc/rAAAAAElFTkSuQmCC);
 }
 
-#header #sr-more-link, #header #header-account > * {
-	background: #fff;
+.dark #header #sr-more-link,
+#header #header-account > *,
+.dark .alert-info,
+.dark .menuarea .label,
+.dark .usertext .usertext-body .md,
+.dark .usertext .usertext-body .md code,
+.dark .entry .buttons li a,
+.dark #header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a {
+	background: #f8f8f8;
+}
+
+.dark .panel-group,
+.dark .panel-heading,
+.dark .panel-info > .panel-heading,
+.dark .panel-default > .panel-heading,
+.dark .panel-body,
+.dark .well {
+	background: #c0c0c0;
+}
+
+.dark .table th, .dark .table td {
+	background: #c0c0c0 !important;
+}
+
+.dark #header #sr-more-link:hover {
+	color: #000;
 }
 
 #show-menu-button:before {
@@ -191,8 +215,8 @@ textarea {
 	border: 1px dotted #fff;
 }
 #header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a:hover {
-	color: #000;
-	background: #000080;
+	color: #fff !important;
+	background: #000080 !important;
 }
 
 [type="checkbox"]:after {
@@ -212,12 +236,14 @@ textarea {
 #header > div, #container > .content,
 #container > .side,
 #container .submission,
+.dark #container .submission,
 #container > .side .content,
 #container > .side .spacer,
 #container > .well,
 .modal .modal-header,
 .modal .modal-body,
-.modal .modal-footer {
+.modal .modal-footer,
+#container .alert-featuredsub {
 	color: #000;
 	background: #c0c0c0;
 	border: 1px solid #dfdfdf;
@@ -316,8 +342,9 @@ textarea {
 .modal button,
 #container button,
 #container input[type="submit"],
-#container input[type="button"] {
-	color: black;
+#container input[type="button"],
+#container .pagination-container .btn-whoaverse-paging a {
+	color: #000 !important;
 	border: 1px solid #fff;
 	border-right: 1px solid #808080;
 	border-bottom: 1px solid #808080;
@@ -360,7 +387,8 @@ textarea {
 	color: #f00;
 }
 
-#container .entry .title .promoted {
+#container .entry .title .promoted,
+#container .entry .title .featuredsub {
 	background: #ffffcc;
 	border: 1px solid #000;
 	-webkit-border-radius: 5px !important;
@@ -455,6 +483,10 @@ textarea {
 	    background-repeat: no-repeat;
     	background-position: left;
 		background-size: 20px 335px;
+	}
+
+	.dark #header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a {
+		background: #bdbebd;
 	}
 
 	#header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a {
