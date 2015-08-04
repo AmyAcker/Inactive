@@ -1,5 +1,7 @@
 /* Inactive style for Voat v1.3b - https://voat.co/v/Inactive */
 
+@import url(/Content/Light?1);
+
 * {
 	-webkit-border-radius: 0 !important;
 	-moz-border-radius: 0 !important;
@@ -106,32 +108,8 @@
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAABmJLR0QA/wD/AP+gvaeTAAAA9klEQVQoz3WRQcqDMBBGXzoBBVdKF0VEoScoeBihR+rdCrlC9yELYUDB0C5+FOPffqsJebyZTAy7eO/f+/P5fDZrbVZARLDWsiwLADFGVBURoWkaYwFEhDzPOcJFUaCqf0bv/TvLMrIs20wA0zQxjiMAqspJRBLgW5xz2COwn3G1iQhWRBLbCh5zKsvSqCoxRuZ5JsbIOI7bI5xzDMNgtj29Xq9kh6qKc477/W4A7LHF3pS0Xouu60xRFMnlavtnfDwehBCoqooQwncjwPV65Xa7AVBV1W/wcrnQNA0AbdsmYNK6ruufv5OAMUaezydt29L3fQJ+AGiSdCHjxc/rAAAAAElFTkSuQmCC);
 }
 
-.dark #header #sr-more-link,
-#header #header-account > *,
-.dark .alert-info,
-.dark .menuarea .label,
-.dark .usertext .usertext-body .md,
-.dark .usertext .usertext-body .md code,
-.dark .entry .buttons li a,
-.dark #header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a {
+#header #header-account > * {
 	background: #f8f8f8;
-}
-
-.dark .panel-group,
-.dark .panel-heading,
-.dark .panel-info > .panel-heading,
-.dark .panel-default > .panel-heading,
-.dark .panel-body,
-.dark .well {
-	background: #c0c0c0;
-}
-
-.dark .table th, .dark .table td {
-	background: #c0c0c0 !important;
-}
-
-.dark #header #sr-more-link:hover {
-	color: #000;
 }
 
 #show-menu-button:before {
@@ -485,10 +463,6 @@ textarea {
 	    background-repeat: no-repeat;
     	background-position: left;
 		background-size: 20px 335px;
-	}
-
-	.dark #header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a {
-		background: #bdbebd;
 	}
 
 	#header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a {
