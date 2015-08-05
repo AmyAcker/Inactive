@@ -22,3 +22,5 @@
   * Added Windows 98 cursors
   * Added start menu, thanks [/u/miro](https://voat.co/user/miro) for the idea!
   * Fixed night mode
+* v1.3
+  * Cleanup and document code

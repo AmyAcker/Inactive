@@ -1,13 +1,16 @@
-/* Inactive style for Voat v1.3b - https://voat.co/v/Inactive */
+/* Inactive style for Voat v1.3 - https://voat.co/v/Inactive */
 
+/* Restore light style */
 @import url(/Content/Light?1);
 
+/* Rounded borders on Windows 98? Not this time */
 * {
 	-webkit-border-radius: 0 !important;
 	-moz-border-radius: 0 !important;
 	border-radius: 0 !important;
 }
 
+/* Windows 98 scrollbars */
 ::-webkit-scrollbar {
 	width: 14px;
 	height: 14px;
@@ -66,10 +69,14 @@
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAP0lEQVQoz2Pcu3fvfwYSABMDiQCrBmdnZ9JtwKUJr5OwaSLoB3RNBDXs3buXeA3oivFqwKYYpwZciqkXcfgAAOQYD07vRrMxAAAAAElFTkSuQmCC);
 }
 
+/* Hide the VOAT logo [...] */
 #header-img {
 	display: none;
 }
 
+/* [...] and replace it with our custom logo
+ * Thanks https://voat.co/user/G4 for the idea
+ */
 #header-img-a:after {
 	content: "";
 	display: block;
@@ -79,10 +86,14 @@
 	margin: 7px 12px 10px;
 }
 
+/* Realign the logo */
 #header-img-a {
 	vertical-align: unset;
 }
 
+/* Use our retro spritesheet for upvoats, downvoats, messages, etc.
+ * Thanks https://voat.co/user/HeadHunter for the idea
+ */
 .arrow-downvote,
 .arrow-downvoted,
 .arrow-upvote,
@@ -104,19 +115,15 @@
 	background-image: url(data:image/png;base64,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);
 }
 
+/* If night mode is on, turn the light icon off */
 .dark #nightmodetoggle {
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAABmJLR0QA/wD/AP+gvaeTAAAA9klEQVQoz3WRQcqDMBBGXzoBBVdKF0VEoScoeBihR+rdCrlC9yELYUDB0C5+FOPffqsJebyZTAy7eO/f+/P5fDZrbVZARLDWsiwLADFGVBURoWkaYwFEhDzPOcJFUaCqf0bv/TvLMrIs20wA0zQxjiMAqspJRBLgW5xz2COwn3G1iQhWRBLbCh5zKsvSqCoxRuZ5JsbIOI7bI5xzDMNgtj29Xq9kh6qKc477/W4A7LHF3pS0Xouu60xRFMnlavtnfDwehBCoqooQwncjwPV65Xa7AVBV1W/wcrnQNA0AbdsmYNK6ruufv5OAMUaezydt29L3fQJ+AGiSdCHjxc/rAAAAAElFTkSuQmCC);
 }
 
-#header #header-account > * {
-	background: #f8f8f8;
-}
-
-#show-menu-button:before {
-	border-top-color: #000;
-	border-bottom-color: #000;
-}
-
+/* Green background color, old style font
+ * Thanks https://voat.co/user/V-sync 
+ * and https://voat.co/user/j_ for the font idea
+ */
 body, #container, .modal {
 	background: #008080;
 	font-family: 'Verdana', sans-serif;
@@ -124,11 +131,13 @@ body, #container, .modal {
 	font-smooth: never !important;
 }
 
+/* Windows 98 arrow cursor */
 body, #container, .modal,
 label, [type="checkbox"] {
 	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAATCAYAAABGKffQAAAABmJLR0QA/wD/AP+gvaeTAAAAcElEQVQoz5WSUQrAMAhDk7D7Xzn7WUGsts6vVvKUqARg28QgBAAkPRbbHgFajwmg+LkByokToCrZAepaVoBOhjKg27giwG+Dm4jcl/pkQQTzGSgJuSq2BpdwehuMrbvqmp7naYNldeFHsJpxmJCjpxemxFQXOQqqJwAAAABJRU5ErkJggg==), auto;
 }
 
+/* Windows 98 text cursor */
 [type="text"],
 [type="password"] {
 	color: #000;
@@ -136,6 +145,7 @@ label, [type="checkbox"] {
 	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAQCAYAAADagWXwAAAABmJLR0QA/wD/AP+gvaeTAAAAL0lEQVQY0+2RoQ0AMAzDnP3/s0tWaahsrJECHMMA2FV5OXcAIIlqmg9DVv6TTJcV4VwZB7onz7wAAAAASUVORK5CYII=), auto !important;
 }
 
+/* Windows 98 help cursor */
 #header .userkarma,
 #header .upvoatsGiven,
 #container .word {
@@ -143,10 +153,7 @@ label, [type="checkbox"] {
 	border-bottom: 0;
 }
 
-#sr-header-area:hover #sr-bar li a {
-	color: #444;
-}
-
+/* Windows 98 hand cursor */
 a, button,
 html input[type="button"],
 input[type="reset"],
@@ -157,31 +164,40 @@ input[type="submit"],
 	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAWCAYAAAAmaHdCAAAABmJLR0QA/wD/AP+gvaeTAAAAgUlEQVQ4y9WTSw7FMAgDccT9rzxdpYpQSz68t6hXUYQmBhMBFiUJMzNAtqD2BAAMuGHbkBN9CCKJ2Wx8BunpjaCYmu/YjsAOO57JuAKe2VwF+Vvf4308p+lkhVldAySpvidVUJtZ3YJU3JT+jiQDFNM5cvOfX7zqprfyMyeevbSqC/fAUye33YsSAAAAAElFTkSuQmCC), auto !important;
 }
 
+/* Disable custom cursor until this bug is fixed: https://code.google.com/p/chromium/issues/detail?id=290466 */
 textarea {
-	/* Disable custom cursor unti this bug is fixed: https://code.google.com/p/chromium/issues/detail?id=290466 */
 	cursor: auto !important;
 }
 
+/* Prevent modal windows from obscuring content behind them */
 .modal {
 	background: transparent;
 }
 
+/* Make links and footer text readable on green background */
 .footer p, .footer a {
 	color: #fff;
 }
 
+/* Underline links on footer to make them different thank the text */
 .footer a {
 	text-decoration: underline;
 }
 
+/* Remove that blue glow the header has when focused */
 #header:focus {
 	outline: none;
 }
 
+/* We don't need a border around the main container */
 #container {
 	border: 0;
 }
 
+/* Add a black border the subscription menu,
+ * we are trying to imitate a typical Windows
+ * combobox
+ */
 #header > #sr-header-area .whoaSubscriptionMenu.hover ul {
 	border: 1px solid #000;
 	-webkit-box-shadow: none;
@@ -189,14 +205,23 @@ textarea {
 	box-shadow: none;
 }
 
+/* Selected items in comboboxes have a dotted border */
 #header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a {
 	border: 1px dotted #fff;
 }
+
+/* Add a blue background a white font when you hover over
+ * an item in a combobox 
+ */
 #header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a:hover {
 	color: #fff !important;
 	background: #000080 !important;
 }
 
+/* A typical Windows checkbox, tested on Chrome and Firefox,
+ * does not work on Firefox for PC but works on Firefox
+ * for Android
+ */
 [type="checkbox"]:after {
 	content: "";
 	display: block;
@@ -207,10 +232,12 @@ textarea {
 	font-weight: bold;
 }
 
+/* Add a check mark to checked checkboxes */
 [type="checkbox"]:checked:after {
 	content: "\2713";
 }
 
+/* Standard gray window with almost white and black borders */
 #header > div, #container > .content,
 #container > .side,
 #container .submission,
@@ -231,17 +258,26 @@ textarea {
 	border-bottom: 1px solid #000;
 }
 
+/* Remove the white border between the titlebar and the
+ * content of a modal window, it looks ugly
+ */
 .modal .modal-body,
 .modal .modal-footer {
 	border-top: 0;
 }
 
+/* Add a little padding to windows, it makes the border look
+ * a little more thick
+ */
 #container > .content,
 #container > .side,
 #container > .well {
 	padding: 1px 2px;
 }
 
+/* This is where half of the magic happens,
+ * reserve some space for the titlebars
+ */
 #container > .content:before,
 #container > .side:before,
 #container > .well:before {
@@ -256,6 +292,7 @@ textarea {
 	margin: 1px 0;
 }
 
+/* Add a blue to almost white gradient to the titlebars */
 #container > .content:before,
 #container > .side:before,
 #container > .well:before,
@@ -270,10 +307,14 @@ textarea {
 	background: linear-gradient(to right, #000080, #1084d0);
 }
 
+/* A little margin for the submission text */
 #container .submission {
 	margin: 4px 2px;
 }
 
+/* Make labels look like standard Windows labels,
+ * remove those annoying shadows
+ */
 .modal label.control-label {
 	color: #000;
 	background: transparent;
@@ -281,15 +322,7 @@ textarea {
 	border-bottom: 0;
 }
 
-.modal input.form-control[type="text"],
-.modal input.form-control[type="password"],
-.modal input.form-control[type="text"]:focus,
-.modal input.form-control[type="password"]:focus {
-	color: #000;
-	background: #fff;
-	border: 1px solid #000;
-}
-
+/* Make links ugly blue like in Windows */
 #header a,
 #sr-header-area .sr-list a,
 #container a,
@@ -299,22 +332,24 @@ textarea {
 	text-decoration: underline;
 }
 
-#sr-header-area:hover .sr-list.hover a {
-	color: #000;
-}
-
+/* Make your subverse name bold */
 #header .pagename {
 	font-weight: bold;
 }
 
+/* Make almost any text inside the main container black,
+ * exceptions are links and the titlebar text
+ */
 #container * {
 	color: #000;
 }
 
+/* Make the titlebar text white */
 #container .modal .modal-header .modal-title {
 	color: #fff;
 }
 
+/* Old style buttons */
 #header .tabmenu li a,
 #container [class^="btn-"],
 .alert [class^="btn-"],
@@ -335,10 +370,12 @@ textarea {
 	opacity: 1 !important;
 }
 
+/* Make the selected hot/new/top button bold */
 #header .tabmenu li.selected a {
 	font-weight: bold;
 }
 
+/* Style for pressed buttons */
 #header .tabmenu li a:active,
 #container [class^="btn-"]:active,
 .alert [class^="btn-"]:active,
@@ -352,6 +389,11 @@ textarea {
 	border-bottom: 1px solid #fff;
 }
 
+/* Make inputs look like Windows inputs */
+.modal input.form-control[type="text"],
+.modal input.form-control[type="password"],
+.modal input.form-control[type="text"]:focus,
+.modal input.form-control[type="password"]:focus,
 #container input[type="text"],
 #container textarea {
 	color: #000;
@@ -359,14 +401,17 @@ textarea {
 	border: 1px solid #000;
 }
 
+/* Make number of upvoats blue [...] */
 #container .entry .tagline .post_upvotes {
 	color: #00f;
 }
 
+/* [...] and number of downvoats red */
 #container .entry .tagline .post_downvotes {
 	color: #f00;
 }
 
+/* Style for the "sticky" text next to sticky posts */
 #container .entry .title .promoted,
 #container .entry .title .featuredsub {
 	background: #ffffcc;
@@ -377,7 +422,13 @@ textarea {
 	padding: 3px 2px;
 }
 
+/* If we have a big screen, let's show a nice start menu,
+ * thanks https://voat.co/user/miro for the idea
+ */
 @media (min-width: 950px) and (min-height: 510px) {
+	/* Move the header to the bottom and make it
+	 * 8em high (this is important)
+	 */
 	#header {
 		position: fixed;
 		width: 100%;
@@ -386,19 +437,25 @@ textarea {
 		margin-bottom: 0;
 	}
 
+	/* Move logo, hot/new/top and user data to the bottom of the header,
+	 * reserve 2.5em for the start menu
+	 */
 	#header #header-container {
 		top: 2.5em;
 		height: 5.5em;
 	}
 
+	/* Reserve 8em below the footer for the start menu */
 	.footer-container {
 		margin-bottom: 8em;
 	}
 
+	/* Hide the arrow next to "my subverses" */
 	#header > #sr-header-area .whoaSubscriptionMenu.hover > li > .drop-arrow {
 		display: none;
 	}
 
+	/* Make "my subverses" look like a button (the start menu button) */
 	#header > #sr-header-area .whoaSubscriptionMenu.hover > li {
 		color: black;
 		font-weight: bold;
@@ -407,7 +464,7 @@ textarea {
 		border-bottom: 1px solid #808080;
 		background: #bdbebd;
 		text-decoration: none;
-		min-width: 24px;
+		min-width: 28px;
 		filter: alpha(opacity=100) !important;
 		opacity: 1 !important;
 		padding: 0 0.5em;
@@ -415,6 +472,7 @@ textarea {
 		line-height: 2.25em;
 	}
 
+	/* Add a Windows logo to the start menu */
 	#header > #sr-header-area .whoaSubscriptionMenu.hover > li:before {
 		content: "";
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANCAYAAACgu+4kAAAABmJLR0QA/wD/AP+gvaeTAAAAiklEQVQoz41SSRKAIAxLGF+m78avxYMDxoLFXFjaNA2FkrACyVdSPSt7LCsQiRH1rCQASWJGFgBOD0CJBJKK5AF2WVx91fLUpgAhsRA6HmwUY6iv1gmnsv4Grv5p4bmOQ+M9BCRT0Eu2FSCHKUBtbfs/KK7+TXSXY2T5kTJsTpDEGdH/PgAc+9FzLgQESJGC21IqAAAAAElFTkSuQmCC);
@@ -427,6 +485,7 @@ textarea {
 		float: left;
 	}
 
+	/* Make start menu items gray [...] */
 	#header > #sr-header-area .whoaSubscriptionMenu.hover > li a {
 		color: black;
 		background: #bdbebd;
@@ -435,21 +494,34 @@ textarea {
 		text-transform: capitalize;
 	}
 
+	/* [...] and blue when the mouse is over them */
 	#header > #sr-header-area .whoaSubscriptionMenu.hover > li:hover {
 		border: 1px solid #808080;
 		border-right: 1px solid #fff;
 		border-bottom: 1px solid #fff;
 	}
 
+	/* Make the bar where the start menu and subverses
+	 * list is 2.5em height and it's background gray
+	 */
 	#header > #sr-header-area .sr-list {
 		margin-left: 0;
 		height: 2.5em;
 		background: #c0c0c0;
 	}
 
+	/* Add a "Voat98" text at the left of the start menu,
+	 * make it 335px high (like Windows 98 at 640x480 resolution)
+	 * reserve a few pixels to the left to show the
+	 * green background (yes, Windows does the same),
+	 * add a 20px padding for the "Voat98" image so it does not
+	 * end behind the subverses list, hide the horizontal scrollbar
+	 * and make the vertical scrollbar appear if there is no
+	 * enough space for the subverses list
+	 */
 	#header > #sr-header-area .whoaSubscriptionMenu.hover > li > ul {
 		top: -335px;
-		width: 24em;
+		width: 28em;
 		height: 335px !important;
 		padding-left: 20px;
 		left: 0.2em;
@@ -465,16 +537,19 @@ textarea {
 		background-size: 20px 335px;
 	}
 
+	/* Make start menu items a little bigger */
 	#header > #sr-header-area .whoaSubscriptionMenu.hover ul li > a {
 		border: 0;
 		padding: 0.5em 0.75em;
 	}
 
+	/* Vertically center text (front, all, random, etc.) */
 	#header > #sr-header-area .sr-list > .flat-list {
 		height: 2.25em;
 		line-height: 2.25em;
 	}
 
+	/* Add a separator between the start menu button and the "front" link */
 	#header > #sr-header-area .sr-list > .flat-list:nth-child(2):before {
 		content: "";
 		display: inline-block;
@@ -487,7 +562,8 @@ textarea {
 	}
 }
 
-/* You may change this if you want different text or delete if you don't want titles */
+/* You may change this if you want a different text or delete it
+ * if you don't want titles */
 
 #container > .content[role="main"]:before {
 	content: ""; /* Put your subverse name here! */
