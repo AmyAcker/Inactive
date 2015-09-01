@@ -24,3 +24,5 @@
   * Fixed night mode
 * v1.3
   * Cleanup and document code
+* v1.3.1
+  * Added support for flairs
