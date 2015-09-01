@@ -413,13 +413,18 @@ textarea {
 
 /* Style for the "sticky" text next to sticky posts */
 #container .entry .title .promoted,
-#container .entry .title .featuredsub {
+#container .entry .title .featuredsub,
+.flair {
 	background: #ffffcc;
 	border: 1px solid #000;
 	-webkit-border-radius: 5px !important;
 	-moz-border-radius: 5px !important;
 	border-radius: 5px !important;
 	padding: 3px 2px;
+}
+
+.flair {
+	display: inline-block;
 }
 
 /* If we have a big screen, let's show a nice start menu,
